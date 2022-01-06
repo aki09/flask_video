@@ -1,8 +1,6 @@
 from cv2 import data
 from flask import Flask, render_template, Response, request
-import urllib
 import cv2
-import requests
 
 app = Flask(__name__)
 camera = cv2.VideoCapture(0)
