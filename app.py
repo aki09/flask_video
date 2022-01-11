@@ -1,4 +1,3 @@
-from cv2 import data
 from flask import Flask, render_template, Response, request
 import cv2
 
@@ -23,15 +22,6 @@ def generate_frames():
 
 @app.route('/')
 def index():
-
-    key_1 = request.args.get('key1')
-    key_2 = request.args.get('key2')
-    print(key_1)
-    # --> value1
-    print(key_2)
-    # return 'done'
-    # --> value2
-    # print("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC")
     return render_template('index.html')
 
 
